@@ -259,4 +259,4 @@ def sgd_update(trainables, learning_rate=1e-2):
     # for t in trainables:
     #   t.value = your implementation here
     for t in trainables:
-        t.value = t.value - learning_rate * t.gradients[t]
+        t.value -= learning_rate * t.gradients[t]
